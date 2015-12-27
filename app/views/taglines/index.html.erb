@@ -1,0 +1,5 @@
+<% @taglines.each do |tagline| %>
+  <h2><%= tagline.id %>: <%= tagline.first_name %></h2>
+  <p><%= tagline.bs %></p>
+  <%= link_to "View", "/taglines/#{tagline.id}" %>
+ <% end %> 

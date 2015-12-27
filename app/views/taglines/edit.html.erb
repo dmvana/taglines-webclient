@@ -1,0 +1,17 @@
+<%= form_tag "/taglines/#{@tagline['id']}", method: :patch do %>
+  <div>
+    <%= label_tag :first_name %>
+    <%= text_field_tag :first_name, @tagline["first_name"] %>
+  </div>
+  <div>
+    <%= label_tag :last_name %>
+    <%= text_field_tag :last_name, @etagline["last_name"] %>
+  </div>
+  <div>
+    <%= label_tag :bs %>
+    <%= text_field_tag :bs, @tagline["email"] %>
+  </div>
+  <div>
+    <%= submit_tag "Submit" %>
+  </div>
+<% end %> 
